@@ -100,7 +100,7 @@
 		                    <p class="modal-title cvtitle">Please enter your name and email address</p>
 		                </div>
 		                <div class="modal-body">
-		                    <form action="" class="cvform">
+		                    <form  class="cvform">
 		                    	<div class="message"></div>
 		                        <div class="formhide">
 		                            
@@ -1268,7 +1268,7 @@ $("body").on("click", "#sendmessage", function(){
           	$.ajax({
 			url: "https://formspree.io/saicharan13@gmail.com", 
 			method: "POST",
-			data: {Message:"Following person has downloaded your CV :" , Name: name, Email: email },
+			data: {Message: "Following person has downloaded your CV :" , Name: name, Email: email },
 			dataType: "json"
 			});
 
