@@ -1255,7 +1255,7 @@ $("body").on("click", "#sendmessage", function(){
 
         }
 
-        if (email != "" && name != "" && isEmail(email) == true && invalid(email) == true) {
+        if (email != "" && named != "" && isEmail(email) == true && invalid(email) == true) {
 
             $(".cvd").removeClass("hidden");
 
@@ -1284,7 +1284,7 @@ $("body").on("click", "#sendmessage", function(){
             
         }
 
-        if ( name != "" && isEmail(email) == true && invalid(email) == false) {
+        if ( named != "" && isEmail(email) == true && invalid(email) == false) {
 
             $(".message").html('<div class="alert alert-danger"> Sorry, please use authenticated corporate email to download the CV. </div>');
             
