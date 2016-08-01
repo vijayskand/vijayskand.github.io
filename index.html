@@ -1263,7 +1263,14 @@ $("body").on("click", "#sendmessage", function(){
 
             $(".formhide").addClass("hidden");
 
-            $(".cvtitle").html("Thanks for showing genuine interest. You can download the CV now.")
+            $(".cvtitle").html("Thanks for showing genuine interest. You can download the CV now.");
+          
+          	$.ajax({
+			url: "https://formspree.io/saicharan13@gmail.com", 
+			method: "POST",
+			data: {Message:"Following person has downloaded your CV :" , Name: name, Email: email },
+			dataType: "json"
+			});
 
             $('body').find('#cvModal').on('hidden.bs.modal', function() {
 
